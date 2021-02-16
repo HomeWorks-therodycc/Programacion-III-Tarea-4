@@ -1,7 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Text;
 using Tarea_IV_____v.Models;
 using System.IO;
 namespace Tarea_IV_____v
@@ -43,7 +40,7 @@ namespace Tarea_IV_____v
                             "<head>" +
                             "<link rel='preconnect' href='https://fonts.gstatic.com'> " +
                             "<link href='https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap' rel='stylesheet'>   " +
-                        "</head>" +
+                            "</head>" +
                             "<body>" +
                             " <div>" +
                             "<style>" +
@@ -70,11 +67,11 @@ namespace Tarea_IV_____v
                             "</html>";
 
                         File.WriteAllText(ruta + "\\" + cedula + ".html", contenido);
-                        }
                     }
                 }
-                Console.WriteLine("Exportado con exito!!!");
-                Console.ReadKey();
             }
+            Console.WriteLine("Exportado con exito!!!");
+            Console.ReadKey();
         }
     }
+}
